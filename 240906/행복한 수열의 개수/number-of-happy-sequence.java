@@ -36,25 +36,21 @@ public class Main {
         int sameCntMax = 1;
         if(mode == 0) {
             // y값 고정
-            int prev = map[line][n-1];
             int tempCnt = 1;
-            for(int i=n-2; i >=0; i--) {
-                if(prev == map[line][i]) tempCnt += 1;
+            for(int i=1; i < n; i++) {
+                if(map[line][i-1] == map[line][i]) tempCnt += 1;
                 else tempCnt = 1;
 
-                prev = map[line][i];
                 sameCntMax = Math.max(tempCnt, sameCntMax);
             }
         }
         else if (mode == 1) {
             // x값 고정
-            int prev = map[n-1][line];
             int tempCnt = 1;
-            for(int i=n-2; i >=0; i--) {
-                if(prev == map[i][line]) tempCnt += 1;
+            for(int i=1; i < n; i++) {
+                if(map[i-1][line] == map[i][line]) tempCnt += 1;
                 else tempCnt = 1;
 
-                prev = map[i][line];
                 sameCntMax = Math.max(tempCnt, sameCntMax);
             }
         }
