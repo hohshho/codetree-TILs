@@ -42,6 +42,7 @@ public class Main {
                 else tempCnt = 1;
 
                 sameCntMax = Math.max(tempCnt, sameCntMax);
+                if(sameCntMax >= m) return true;
             }
         }
         else if (mode == 1) {
@@ -52,6 +53,7 @@ public class Main {
                 else tempCnt = 1;
 
                 sameCntMax = Math.max(tempCnt, sameCntMax);
+                if(sameCntMax >= m) return true;
             }
         }
 
