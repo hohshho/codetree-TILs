@@ -39,7 +39,7 @@ public class Main {
 
         // 2x2 정사각형 탐색
         for(int i=0; i<=n-2;i++){
-            for(int j=0; j<=n-2; j++){
+            for(int j=0; j<=m-2; j++){
                 int sx = j, sy = i;
 
                 searchBlock1(sx, sy);
@@ -49,7 +49,7 @@ public class Main {
 
         // 3x3 정사각형 탐색
         for(int i=0; i<=n-3;i++){
-            for(int j=0; j<=n-3; j++){
+            for(int j=0; j<=m-3; j++){
                 int sx = j, sy = i;
 
                 searchBlock2(sx, sy);
