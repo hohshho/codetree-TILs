@@ -30,6 +30,8 @@ public class Main {
                 int ny = R + dy[i];
                 int nx = C + dx[i];
 
+                if(!isInrange(nx, ny)) continue;
+
                 if(map[ny][nx] > map[R][C]) {
                     check = true;
                     R += dy[i];
