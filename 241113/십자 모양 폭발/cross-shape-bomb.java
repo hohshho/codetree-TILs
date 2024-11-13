@@ -14,11 +14,9 @@ public class Main {
         N = sc.nextInt();
         map = new int[N][N];
 
-        for(int i=0; i<N; i++){
-            for(int j=0; j<N; j++){
+        for(int i=0; i<N; i++)
+            for(int j=0; j<N; j++)
                 map[i][j] = sc.nextInt();
-            }
-        }
 
         by = sc.nextInt() - 1;
         bx = sc.nextInt() - 1;
@@ -28,9 +26,8 @@ public class Main {
         move();
 
         for(int[] row : map){
-            for(int item : row){
+            for(int item : row)
                 System.out.print(item + " ");
-            }
             System.out.println("");
         }
     }
