@@ -53,8 +53,8 @@ public class Main {
 
         void move(char command) {
             if(command == 'L') {
-                int nx = this.x += dx[0];
-                int ny = this.y += dy[0];
+                int nx = this.x + this.dx[0];
+                int ny = this.y + this.dy[0];
 
                 if(!isInrange(nx, ny)) return;
 
@@ -71,8 +71,8 @@ public class Main {
                 map[this.y][this.x] = this.bottom;
             }
             else if(command == 'D') {
-                int nx = this.x += dx[1];
-                int ny = this.y += dy[1];
+                int nx = this.x + this.dx[1];
+                int ny = this.y + this.dy[1];
 
                 if(!isInrange(nx, ny)) return;
                 
@@ -89,9 +89,9 @@ public class Main {
                 map[this.y][this.x] = this.bottom;
             }
             else if(command == 'R') {
-                int nx = this.x += dx[2];
-                int ny = this.y += dy[2];
-
+                int nx = this.x + this.dx[2];
+                int ny = this.y + this.dy[2];
+  
                 if(!isInrange(nx, ny)) return;
 
                 // 이동
@@ -107,8 +107,8 @@ public class Main {
                 map[this.y][this.x] = this.bottom;
             }
             else if(command == 'U') {
-                int nx = this.x += dx[3];
-                int ny = this.y += dy[3];
+                int nx = this.x + this.dx[3];
+                int ny = this.y + this.dy[3];
 
                 if(!isInrange(nx, ny)) return;
 
