@@ -12,7 +12,7 @@ public class Main {
         R = sc.nextInt() - 1;
         C = sc.nextInt() - 1;
 
-        dice = new Dice(R, C);
+        dice = new Dice(C, R);
         
         for(int i=0; i<M; i++){
             dice.move(sc.next().charAt(0));
