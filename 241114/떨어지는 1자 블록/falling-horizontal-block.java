@@ -26,16 +26,16 @@ public class Main {
 
         int line = 0;
         while(true){
-            // K, K+1, K+2
             boolean check = true;
 
             if(line != N) {
+                // K, K+1, K+2
                 for(int i=K; i<K+M; i++){
                     if(map[line][i] == 1) check = false;
                 }
             }
             
-            // 전 라인에 1추가
+            // 전 라인에 1추가, line까지 검사 한 경우
             if(!check || line == N) {
                 line -= 1;
                 for(int i=K; i<K+M; i++){
