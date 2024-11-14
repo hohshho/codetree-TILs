@@ -19,6 +19,11 @@ public class Main {
             }
         }
 
+        if(N == 1) {
+            System.out.println(1);
+            return;
+        }
+
         int line = 0;
         while(true){
             // K, K+1, K+2
