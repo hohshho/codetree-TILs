@@ -24,14 +24,14 @@ public class Main {
             // K, K+1, K+2
             boolean check = true;
 
-            for(int i=K; i<M; i++){
+            for(int i=K; i<K+M; i++){
                 if(map[line][i] == 1) check = false;
             }
             
             // 전 라인에 1추가
             if(!check) {
                 line -= 1;
-                for(int i=K; i<M; i++){
+                for(int i=K; i<K+M; i++){
                     map[line][i] = 1;
                 }
                 break;
